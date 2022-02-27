@@ -3,10 +3,10 @@ from .forms import UploadFileForm
 
 # Create your views here.
 def home(request):
-    return render(request, 'food/food.html')
+    return render(request, 'food/food.html', {})
 
 def result(request):
-    return render(request, 'food/result.html')
+    return render(request, 'food/result.html', {})
 
 def upload_file(request):
     if request.method == 'POST':
